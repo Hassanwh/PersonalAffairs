@@ -5,11 +5,11 @@ package code.person.util;
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2004</p>
  * <p>Company: </p>
- * @author chengcai
+ * @author 
  * @version 1.0
  */
 
-//des¼ÓÃÜËã·¨Àà
+//desåŠ å¯†ç®—æ³•ç±»
 public class Descrypt
 {
 
