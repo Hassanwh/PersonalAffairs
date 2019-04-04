@@ -11,16 +11,16 @@ import code.person.util.AccessToken;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2015-06-10
- * @author  ldh
- * @version  2.0
+ * <br/>Date:
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface AccessTokenDao{
 
 	
 	/**
-	 * 根据主键得到令牌信息对象
+	 * 鏍规嵁涓婚敭寰楀埌浠ょ墝淇℃伅瀵硅薄
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -28,7 +28,7 @@ public interface AccessTokenDao{
 	public AccessToken selAccessToken(AccessToken AccessToken);
 	
 	/**
-	 * 添加令牌信息
+	 * 娣诲姞浠ょ墝淇℃伅
 	 * @param AccessToken
 	 * @return
 	 * @throws Exception
@@ -36,7 +36,7 @@ public interface AccessTokenDao{
 	public void addAccessToken(AccessToken AccessToken);
 	
 	/**
-	 * 更新令牌信息
+	 * 鏇存柊浠ょ墝淇℃伅
 	 * @param AccessToken
 	 * @return
 	 * @throws Exception
@@ -44,7 +44,7 @@ public interface AccessTokenDao{
 	public void updAccessToken(AccessToken AccessToken);
 	
 	/**
-	 * 删除锁定信息
+	 * 鍒犻櫎閿佸畾淇℃伅
 	 * @param AccessToken
 	 * @return
 	 */
