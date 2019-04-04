@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="code.person.dao.UserDao">
+	<resultMap id="CusInfoResultMap" type="code.person.pojo.User">
+		<result property="userNo" column="user_no"/>
+		<result property="password" column="password"/>
+		<result property="userName" column="user_name"/>
+		<result property="sex" column="sex"/>
+		<result property="city" column="city"/>
+		<result property="country" column="country"/>
+		<result property="province" column="province"/>
+		<result property="subscribeTime" column="subscribe_time"/>
+		<result property="userPhone" column="user_phone"/>
+	</resultMap>
+	<select id="getCusInfo"  resultMap="CusInfoResultMap">
+		select * from cus_info
+	</select>
+	<insert id="addCusInfo" parameterType="code.person.pojo.User">
+		INSERT INTO CUS_INFO (USER_NO,PASSWORD,USER_NAME,SEX,CITY,COUNTRY,PROVINCE,SUBSCRIBE_TIME,USER_PHONE)
+		VALUES 
+		(#{userNo},#{password},#{userName},#{sex},#{city},#{country},#{province},#{subscribeTime},#{userPhone})
+	</insert>
+</mapper>
+
+
+
+
+
+
+
