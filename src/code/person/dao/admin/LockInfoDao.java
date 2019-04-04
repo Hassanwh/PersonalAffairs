@@ -10,9 +10,9 @@ import code.person.pojo.admin.LockInfo;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2015-06-10
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface LockInfoDao{
@@ -20,11 +20,11 @@ public interface LockInfoDao{
 	
 	
 	/*
-	 * ===========锁定信息
+	 * ===========閿佸畾淇℃伅
 	 */
 	 
 	/**
-	 * 根据非空条件得到锁定信息分页列表
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌閿佸畾淇℃伅鍒嗛〉鍒楄〃
 	 * @param lockInfo
 	 * @return
 	 * @throws Exception
@@ -32,7 +32,7 @@ public interface LockInfoDao{
 	public List selLockInfoList(LockInfo lockInfo,PageBounds pageBounds);
 		
 	/**
-	 * 根据非空条件得到锁定信息
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌閿佸畾淇℃伅
 	 * @param lockInfo
 	 * @return
 	 * @throws Exception
@@ -40,7 +40,7 @@ public interface LockInfoDao{
 	public List selLockInfoList(LockInfo lockInfo);
 	
 	/**
-	 * 根据主键得到锁定信息对象
+	 * 鏍规嵁涓婚敭寰楀埌閿佸畾淇℃伅瀵硅薄
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -48,7 +48,7 @@ public interface LockInfoDao{
 	public LockInfo selLockInfo(LockInfo lockInfo);
 	
 	/**
-	 * 添加锁定信息
+	 * 娣诲姞閿佸畾淇℃伅
 	 * @param lockInfo
 	 * @return
 	 * @throws Exception
@@ -56,7 +56,7 @@ public interface LockInfoDao{
 	public void addLockInfo(LockInfo lockInfo);
 	
 	/**
-	 * 更新锁定信息
+	 * 鏇存柊閿佸畾淇℃伅
 	 * @param lockInfo
 	 * @return
 	 * @throws Exception
@@ -64,7 +64,7 @@ public interface LockInfoDao{
 	public void updLockInfo(LockInfo lockInfo);
 	
 	/**
-	 * 删除锁定信息
+	 * 鍒犻櫎閿佸畾淇℃伅
 	 * @param lockInfo
 	 * @return
 	 */
