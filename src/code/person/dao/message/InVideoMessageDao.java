@@ -12,9 +12,9 @@ import code.person.pojo.message.InVideoMessage;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2014-10-23
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface InVideoMessageDao{
@@ -22,11 +22,11 @@ public interface InVideoMessageDao{
 	
 	
 	/*
-	 * ===========视频消息
+	 * ===========瑙嗛娑堟伅
 	 */
 	 
 	/**
-	 * 根据非空条件得到视频消息分页列表
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌瑙嗛娑堟伅鍒嗛〉鍒楄〃
 	 * @param inVideoMessage
 	 * @return
 	 * @throws Exception
@@ -34,7 +34,7 @@ public interface InVideoMessageDao{
 	public List selInVideoMessageList(InVideoMessage inVideoMessage,PageBounds pageBounds);
 		
 	/**
-	 * 根据非空条件得到视频消息
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌瑙嗛娑堟伅
 	 * @param inVideoMessage
 	 * @return
 	 * @throws Exception
@@ -42,7 +42,7 @@ public interface InVideoMessageDao{
 	public List selInVideoMessageList(InVideoMessage inVideoMessage);
 	
 	/**
-	 * 根据主键得到视频消息对象
+	 * 鏍规嵁涓婚敭寰楀埌瑙嗛娑堟伅瀵硅薄
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -50,7 +50,7 @@ public interface InVideoMessageDao{
 	public InVideoMessage selInVideoMessage(InVideoMessage inVideoMessage);
 	
 	/**
-	 * 添加视频消息
+	 * 娣诲姞瑙嗛娑堟伅
 	 * @param inVideoMessage
 	 * @return
 	 * @throws Exception
@@ -58,7 +58,7 @@ public interface InVideoMessageDao{
 	public void addInVideoMessage(InVideoMessage inVideoMessage);
 	
 	/**
-	 * 更新视频消息
+	 * 鏇存柊瑙嗛娑堟伅
 	 * @param inVideoMessage
 	 * @return
 	 * @throws Exception
@@ -66,7 +66,7 @@ public interface InVideoMessageDao{
 	public void updInVideoMessage(InVideoMessage inVideoMessage);
 	
 	/**
-	 * 删除视频消息
+	 * 鍒犻櫎瑙嗛娑堟伅
 	 * @param inVideoMessage
 	 * @return
 	 */
