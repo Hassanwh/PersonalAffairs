@@ -1,7 +1,7 @@
 # PersonalAffairs
 微信公众号   个人事务管理
 
-免费域名：
+域名：
 
 主 personalaffairs.*****.***
 
