@@ -11,7 +11,7 @@ public class MyInterceptor2 extends HandlerInterceptorAdapter {
 	@Override
 	public boolean preHandle(HttpServletRequest request,HttpServletResponse response, Object handler) throws Exception {
 		System.out.println("MyInterceptor2.preHandle()");
-		return true;  //¼ÌÐøÖ´ÐÐaction
+		return true;
 	}
 
 }
