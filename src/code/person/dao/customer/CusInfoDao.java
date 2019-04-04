@@ -12,20 +12,20 @@ import code.person.pojo.customer.CusInfo;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2014-10-20
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 public interface CusInfoDao{
 
 	
 	
 	/*
-	 * ===========¿Í»§ĞÅÏ¢±í
+	 * ===========å®¢æˆ·ä¿¡æ¯è¡¨
 	 */
 	 
 	/**
-	 * ¸ù¾İ·Ç¿ÕÌõ¼şµÃµ½¿Í»§ĞÅÏ¢±í·ÖÒ³ÁĞ±í
+	 * æ ¹æ®éç©ºæ¡ä»¶å¾—åˆ°å®¢æˆ·ä¿¡æ¯è¡¨åˆ†é¡µåˆ—è¡¨
 	 * @param cusInfo
 	 * @return
 	 * @throws Exception
@@ -33,7 +33,7 @@ public interface CusInfoDao{
 	public List selCusInfoList(CusInfo cusInfo,PageBounds pageBounds);
 		
 	/**
-	 * ¸ù¾İ·Ç¿ÕÌõ¼şµÃµ½¿Í»§ĞÅÏ¢±í
+	 * æ ¹æ®éç©ºæ¡ä»¶å¾—åˆ°å®¢æˆ·ä¿¡æ¯è¡¨
 	 * @param cusInfo
 	 * @return
 	 * @throws Exception
@@ -41,7 +41,7 @@ public interface CusInfoDao{
 	public List selCusInfoList(CusInfo cusInfo);
 	
 	/**
-	 * ¸ù¾İÖ÷¼üµÃµ½¿Í»§ĞÅÏ¢±í¶ÔÏó
+	 * æ ¹æ®ä¸»é”®å¾—åˆ°å®¢æˆ·ä¿¡æ¯è¡¨å¯¹è±¡
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -49,7 +49,7 @@ public interface CusInfoDao{
 	public CusInfo selCusInfo(CusInfo cusInfo);
 	
 	/**
-	 * Ìí¼Ó¿Í»§ĞÅÏ¢±í
+	 * æ·»åŠ å®¢æˆ·ä¿¡æ¯è¡¨
 	 * @param cusInfo
 	 * @return
 	 * @throws Exception
@@ -57,7 +57,7 @@ public interface CusInfoDao{
 	public void addCusInfo(CusInfo cusInfo);
 	
 	/**
-	 * ¸üĞÂ¿Í»§ĞÅÏ¢±í
+	 * æ›´æ–°å®¢æˆ·ä¿¡æ¯è¡¨
 	 * @param cusInfo
 	 * @return
 	 * @throws Exception
@@ -65,7 +65,7 @@ public interface CusInfoDao{
 	public void updCusInfo(CusInfo cusInfo);
 	
 	/**
-	 * É¾³ı¿Í»§ĞÅÏ¢±í
+	 * åˆ é™¤å®¢æˆ·ä¿¡æ¯è¡¨
 	 * @param cusInfo
 	 * @return
 	 */
