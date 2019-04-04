@@ -1,7 +1,7 @@
 package code.person.service.menu.impl;
 
 /**
- * ²Ëµ¥
+ * èœå•
  * 
  */
 public class Menu {
