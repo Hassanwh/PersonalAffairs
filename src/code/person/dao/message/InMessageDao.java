@@ -12,9 +12,9 @@ import code.person.pojo.message.InMessage;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2014-10-23
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface InMessageDao{
@@ -22,11 +22,11 @@ public interface InMessageDao{
 	
 	
 	/*
-	 * ===========½ÓÊÕÏûÏ¢±í
+	 * ===========æ¥æ”¶æ¶ˆæ¯è¡¨
 	 */
 	 
 	/**
-	 * ¸ù¾İ·Ç¿ÕÌõ¼şµÃµ½½ÓÊÕÏûÏ¢±í·ÖÒ³ÁĞ±í
+	 * æ ¹æ®éç©ºæ¡ä»¶å¾—åˆ°æ¥æ”¶æ¶ˆæ¯è¡¨åˆ†é¡µåˆ—è¡¨
 	 * @param inMessage
 	 * @return
 	 * @throws Exception
@@ -34,7 +34,7 @@ public interface InMessageDao{
 	public List selInMessageList(InMessage inMessage,PageBounds pageBounds);
 		
 	/**
-	 * ¸ù¾İ·Ç¿ÕÌõ¼şµÃµ½½ÓÊÕÏûÏ¢±í
+	 * æ ¹æ®éç©ºæ¡ä»¶å¾—åˆ°æ¥æ”¶æ¶ˆæ¯è¡¨
 	 * @param inMessage
 	 * @return
 	 * @throws Exception
@@ -42,7 +42,7 @@ public interface InMessageDao{
 	public List selInMessageList(InMessage inMessage);
 	
 	/**
-	 * ¸ù¾İÖ÷¼üµÃµ½½ÓÊÕÏûÏ¢±í¶ÔÏó
+	 * æ ¹æ®ä¸»é”®å¾—åˆ°æ¥æ”¶æ¶ˆæ¯è¡¨å¯¹è±¡
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -50,7 +50,7 @@ public interface InMessageDao{
 	public InMessage selInMessage(InMessage inMessage);
 	
 	/**
-	 * Ìí¼Ó½ÓÊÕÏûÏ¢±í
+	 * æ·»åŠ æ¥æ”¶æ¶ˆæ¯è¡¨
 	 * @param inMessage
 	 * @return
 	 * @throws Exception
@@ -58,7 +58,7 @@ public interface InMessageDao{
 	public void addInMessage(InMessage inMessage);
 	
 	/**
-	 * ¸üĞÂ½ÓÊÕÏûÏ¢±í
+	 * æ›´æ–°æ¥æ”¶æ¶ˆæ¯è¡¨
 	 * @param inMessage
 	 * @return
 	 * @throws Exception
@@ -66,7 +66,7 @@ public interface InMessageDao{
 	public void updInMessage(InMessage inMessage);
 	
 	/**
-	 * É¾³ı½ÓÊÕÏûÏ¢±í
+	 * åˆ é™¤æ¥æ”¶æ¶ˆæ¯è¡¨
 	 * @param inMessage
 	 * @return
 	 */
