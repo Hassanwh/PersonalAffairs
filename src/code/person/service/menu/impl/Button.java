@@ -1,7 +1,7 @@
 package code.person.service.menu.impl;
 
 /**
- * 按钮的基类
+ * 鎸夐挳
  * 
  */
 public class Button {
