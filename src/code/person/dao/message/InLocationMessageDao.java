@@ -12,9 +12,9 @@ import code.person.pojo.message.InLocationMessage;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2014-10-23
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface InLocationMessageDao{
@@ -22,11 +22,11 @@ public interface InLocationMessageDao{
 	
 	
 	/*
-	 * ===========地理位置消息
+	 * ===========鍦扮悊浣嶇疆娑堟伅
 	 */
 	 
 	/**
-	 * 根据非空条件得到地理位置消息分页列表
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌鍦扮悊浣嶇疆娑堟伅鍒嗛〉鍒楄〃
 	 * @param inLocationMessage
 	 * @return
 	 * @throws Exception
@@ -34,7 +34,7 @@ public interface InLocationMessageDao{
 	public List selInLocationMessageList(InLocationMessage inLocationMessage,PageBounds pageBounds);
 		
 	/**
-	 * 根据非空条件得到地理位置消息
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌鍦扮悊浣嶇疆娑堟伅
 	 * @param inLocationMessage
 	 * @return
 	 * @throws Exception
@@ -42,7 +42,7 @@ public interface InLocationMessageDao{
 	public List selInLocationMessageList(InLocationMessage inLocationMessage);
 	
 	/**
-	 * 根据主键得到地理位置消息对象
+	 * 鏍规嵁涓婚敭寰楀埌鍦扮悊浣嶇疆娑堟伅瀵硅薄
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -50,7 +50,7 @@ public interface InLocationMessageDao{
 	public InLocationMessage selInLocationMessage(InLocationMessage inLocationMessage);
 	
 	/**
-	 * 添加地理位置消息
+	 * 娣诲姞鍦扮悊浣嶇疆娑堟伅
 	 * @param inLocationMessage
 	 * @return
 	 * @throws Exception
@@ -58,7 +58,7 @@ public interface InLocationMessageDao{
 	public void addInLocationMessage(InLocationMessage inLocationMessage);
 	
 	/**
-	 * 更新地理位置消息
+	 * 鏇存柊鍦扮悊浣嶇疆娑堟伅
 	 * @param inLocationMessage
 	 * @return
 	 * @throws Exception
@@ -66,7 +66,7 @@ public interface InLocationMessageDao{
 	public void updInLocationMessage(InLocationMessage inLocationMessage);
 	
 	/**
-	 * 删除地理位置消息
+	 * 鍒犻櫎鍦扮悊浣嶇疆娑堟伅
 	 * @param inLocationMessage
 	 * @return
 	 */
