@@ -12,9 +12,9 @@ import code.person.pojo.message.InVoiceMessage;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2014-10-23
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface InVoiceMessageDao{
@@ -22,11 +22,11 @@ public interface InVoiceMessageDao{
 	
 	
 	/*
-	 * ===========语音消息
+	 * ===========璇煶娑堟伅
 	 */
 	 
 	/**
-	 * 根据非空条件得到语音消息分页列表
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌璇煶娑堟伅鍒嗛〉鍒楄〃
 	 * @param inVoiceMessage
 	 * @return
 	 * @throws Exception
@@ -34,7 +34,7 @@ public interface InVoiceMessageDao{
 	public List selInVoiceMessageList(InVoiceMessage inVoiceMessage,PageBounds pageBounds);
 		
 	/**
-	 * 根据非空条件得到语音消息
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌璇煶娑堟伅
 	 * @param inVoiceMessage
 	 * @return
 	 * @throws Exception
@@ -42,7 +42,7 @@ public interface InVoiceMessageDao{
 	public List selInVoiceMessageList(InVoiceMessage inVoiceMessage);
 	
 	/**
-	 * 根据主键得到语音消息对象
+	 * 鏍规嵁涓婚敭寰楀埌璇煶娑堟伅瀵硅薄
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -50,7 +50,7 @@ public interface InVoiceMessageDao{
 	public InVoiceMessage selInVoiceMessage(InVoiceMessage inVoiceMessage);
 	
 	/**
-	 * 添加语音消息
+	 * 娣诲姞璇煶娑堟伅
 	 * @param inVoiceMessage
 	 * @return
 	 * @throws Exception
@@ -58,7 +58,7 @@ public interface InVoiceMessageDao{
 	public void addInVoiceMessage(InVoiceMessage inVoiceMessage);
 	
 	/**
-	 * 更新语音消息
+	 * 鏇存柊璇煶娑堟伅
 	 * @param inVoiceMessage
 	 * @return
 	 * @throws Exception
@@ -66,7 +66,7 @@ public interface InVoiceMessageDao{
 	public void updInVoiceMessage(InVoiceMessage inVoiceMessage);
 	
 	/**
-	 * 删除语音消息
+	 * 鍒犻櫎璇煶娑堟伅
 	 * @param inVoiceMessage
 	 * @return
 	 */
