@@ -11,9 +11,9 @@ import code.person.pojo.customer.CusRel;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2014-10-21
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface CusRelDao{
@@ -21,11 +21,11 @@ public interface CusRelDao{
 	
 	
 	/*
-	 * ===========¿Í»§ĞÅÏ¢¹ØÁª±í
+	 * ===========å®¢æˆ·ä¿¡æ¯å…³è”è¡¨
 	 */
 	 
 	/**
-	 * ¸ù¾İ·Ç¿ÕÌõ¼şµÃµ½¿Í»§ĞÅÏ¢¹ØÁª±í·ÖÒ³ÁĞ±í
+	 * æ ¹æ®éç©ºæ¡ä»¶å¾—åˆ°å®¢æˆ·ä¿¡æ¯å…³è”è¡¨åˆ†é¡µåˆ—è¡¨
 	 * @param cusRel
 	 * @return
 	 * @throws Exception
@@ -33,7 +33,7 @@ public interface CusRelDao{
 	public List selCusRelList(CusRel cusRel,PageBounds pageBounds);
 		
 	/**
-	 * ¸ù¾İ·Ç¿ÕÌõ¼şµÃµ½¿Í»§ĞÅÏ¢¹ØÁª±í
+	 * æ ¹æ®éç©ºæ¡ä»¶å¾—åˆ°å®¢æˆ·ä¿¡æ¯å…³è”è¡¨
 	 * @param cusRel
 	 * @return
 	 * @throws Exception
@@ -41,7 +41,7 @@ public interface CusRelDao{
 	public List selCusRelList(CusRel cusRel);
 	
 	/**
-	 * ¸ù¾İÖ÷¼üµÃµ½¿Í»§ĞÅÏ¢¹ØÁª±í¶ÔÏó
+	 * æ ¹æ®ä¸»é”®å¾—åˆ°å®¢æˆ·ä¿¡æ¯å…³è”è¡¨å¯¹è±¡
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -51,7 +51,7 @@ public interface CusRelDao{
 	public CusRel selCusRelByIdAcct(CusRel cusRel);
 	
 	/**
-	 * Ìí¼Ó¿Í»§ĞÅÏ¢¹ØÁª±í
+	 * æ·»åŠ å®¢æˆ·ä¿¡æ¯å…³è”è¡¨
 	 * @param cusRel
 	 * @return
 	 * @throws Exception
@@ -59,7 +59,7 @@ public interface CusRelDao{
 	public void addCusRel(CusRel cusRel);
 	
 	/**
-	 * ¸üĞÂ¿Í»§ĞÅÏ¢¹ØÁª±í
+	 * æ›´æ–°å®¢æˆ·ä¿¡æ¯å…³è”è¡¨
 	 * @param cusRel
 	 * @return
 	 * @throws Exception
@@ -67,7 +67,7 @@ public interface CusRelDao{
 	public void updCusRel(CusRel cusRel);
 	
 	/**
-	 * É¾³ı¿Í»§ĞÅÏ¢¹ØÁª±í
+	 * åˆ é™¤å®¢æˆ·ä¿¡æ¯å…³è”è¡¨
 	 * @param cusRel
 	 * @return
 	 */
