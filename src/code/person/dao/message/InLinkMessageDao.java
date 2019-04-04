@@ -12,9 +12,9 @@ import code.person.pojo.message.InLinkMessage;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2014-10-23
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface InLinkMessageDao{
@@ -22,11 +22,11 @@ public interface InLinkMessageDao{
 	
 	
 	/*
-	 * ===========链接消息
+	 * ===========閾炬帴娑堟伅
 	 */
 	 
 	/**
-	 * 根据非空条件得到链接消息分页列表
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌閾炬帴娑堟伅鍒嗛〉鍒楄〃
 	 * @param inLinkMessage
 	 * @return
 	 * @throws Exception
@@ -34,7 +34,7 @@ public interface InLinkMessageDao{
 	public List selInLinkMessageList(InLinkMessage inLinkMessage,PageBounds pageBounds);
 		
 	/**
-	 * 根据非空条件得到链接消息
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌閾炬帴娑堟伅
 	 * @param inLinkMessage
 	 * @return
 	 * @throws Exception
@@ -42,7 +42,7 @@ public interface InLinkMessageDao{
 	public List selInLinkMessageList(InLinkMessage inLinkMessage);
 	
 	/**
-	 * 根据主键得到链接消息对象
+	 * 鏍规嵁涓婚敭寰楀埌閾炬帴娑堟伅瀵硅薄
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -50,7 +50,7 @@ public interface InLinkMessageDao{
 	public InLinkMessage selInLinkMessage(InLinkMessage inLinkMessage);
 	
 	/**
-	 * 添加链接消息
+	 * 娣诲姞閾炬帴娑堟伅
 	 * @param inLinkMessage
 	 * @return
 	 * @throws Exception
@@ -58,7 +58,7 @@ public interface InLinkMessageDao{
 	public void addInLinkMessage(InLinkMessage inLinkMessage);
 	
 	/**
-	 * 更新链接消息
+	 * 鏇存柊閾炬帴娑堟伅
 	 * @param inLinkMessage
 	 * @return
 	 * @throws Exception
@@ -66,7 +66,7 @@ public interface InLinkMessageDao{
 	public void updInLinkMessage(InLinkMessage inLinkMessage);
 	
 	/**
-	 * 删除链接消息
+	 * 鍒犻櫎閾炬帴娑堟伅
 	 * @param inLinkMessage
 	 * @return
 	 */
