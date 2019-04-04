@@ -12,9 +12,9 @@ import code.person.pojo.message.InImageMessage;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2014-10-23
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface InImageMessageDao{
@@ -22,11 +22,11 @@ public interface InImageMessageDao{
 	
 	
 	/*
-	 * ===========图片消息
+	 * ===========鍥剧墖娑堟伅
 	 */
 	 
 	/**
-	 * 根据非空条件得到图片消息分页列表
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌鍥剧墖娑堟伅鍒嗛〉鍒楄〃
 	 * @param inImageMessage
 	 * @return
 	 * @throws Exception
@@ -34,7 +34,7 @@ public interface InImageMessageDao{
 	public List selInImageMessageList(InImageMessage inImageMessage,PageBounds pageBounds);
 		
 	/**
-	 * 根据非空条件得到图片消息
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌鍥剧墖娑堟伅
 	 * @param inImageMessage
 	 * @return
 	 * @throws Exception
@@ -42,7 +42,7 @@ public interface InImageMessageDao{
 	public List selInImageMessageList(InImageMessage inImageMessage);
 	
 	/**
-	 * 根据主键得到图片消息对象
+	 * 鏍规嵁涓婚敭寰楀埌鍥剧墖娑堟伅瀵硅薄
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -50,7 +50,7 @@ public interface InImageMessageDao{
 	public InImageMessage selInImageMessage(InImageMessage inImageMessage);
 	
 	/**
-	 * 添加图片消息
+	 * 娣诲姞鍥剧墖娑堟伅
 	 * @param inImageMessage
 	 * @return
 	 * @throws Exception
@@ -58,7 +58,7 @@ public interface InImageMessageDao{
 	public void addInImageMessage(InImageMessage inImageMessage);
 	
 	/**
-	 * 更新图片消息
+	 * 鏇存柊鍥剧墖娑堟伅
 	 * @param inImageMessage
 	 * @return
 	 * @throws Exception
@@ -66,7 +66,7 @@ public interface InImageMessageDao{
 	public void updInImageMessage(InImageMessage inImageMessage);
 	
 	/**
-	 * 删除图片消息
+	 * 鍒犻櫎鍥剧墖娑堟伅
 	 * @param inImageMessage
 	 * @return
 	 */
