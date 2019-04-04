@@ -7,7 +7,7 @@ import org.safehaus.uuid.UUIDGenerator;
 /**
  * The system sequence utility.
  */
-//序列化id号的类
+
 public class Sequence {
 	
 
