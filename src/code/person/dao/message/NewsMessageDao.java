@@ -12,9 +12,9 @@ import code.person.pojo.message.NewsMessage;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2015-03-21
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface NewsMessageDao{
@@ -22,11 +22,11 @@ public interface NewsMessageDao{
 	
 	
 	/*
-	 * ===========图文消息
+	 * ===========鍥炬枃娑堟伅
 	 */
 	 
 	/**
-	 * 根据非空条件得到图文消息分页列表
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌鍥炬枃娑堟伅鍒嗛〉鍒楄〃
 	 * @param newsMessage
 	 * @return
 	 * @throws Exception
@@ -34,7 +34,7 @@ public interface NewsMessageDao{
 	public List selNewsMessageList(NewsMessage newsMessage,PageBounds pageBounds);
 		
 	/**
-	 * 根据非空条件得到图文消息
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌鍥炬枃娑堟伅
 	 * @param newsMessage
 	 * @return
 	 * @throws Exception
@@ -42,7 +42,7 @@ public interface NewsMessageDao{
 	public List selNewsMessageList(NewsMessage newsMessage);
 	
 	/**
-	 * 根据主键得到图文消息对象
+	 * 鏍规嵁涓婚敭寰楀埌鍥炬枃娑堟伅瀵硅薄
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -50,7 +50,7 @@ public interface NewsMessageDao{
 	public NewsMessage selNewsMessage(NewsMessage newsMessage);
 	
 	/**
-	 * 添加图文消息
+	 * 娣诲姞鍥炬枃娑堟伅
 	 * @param newsMessage
 	 * @return
 	 * @throws Exception
@@ -58,7 +58,7 @@ public interface NewsMessageDao{
 	public void addNewsMessage(NewsMessage newsMessage);
 	
 	/**
-	 * 更新图文消息
+	 * 鏇存柊鍥炬枃娑堟伅
 	 * @param newsMessage
 	 * @return
 	 * @throws Exception
@@ -66,7 +66,7 @@ public interface NewsMessageDao{
 	public void updNewsMessage(NewsMessage newsMessage);
 	
 	/**
-	 * 删除图文消息
+	 * 鍒犻櫎鍥炬枃娑堟伅
 	 * @param newsMessage
 	 * @return
 	 */
