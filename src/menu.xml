@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="GBK"?>
 <menus>
-	<one name="我的">
-		<button type="view" name="账户一览"><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat%2FviewAccountMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>	
-		<button type="view" name="存款"><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat%2FviewDepositMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>	
-		<button type="view" name="信用卡"><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat%2FviewCreditCardMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>	
-		<button type="view" name="理财"><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat%2FviewManageMoneyMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>	
-		<button type="view" name="贷款"><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat%2FviewLoanMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>	
+	<one name="鎴戠殑">
+		<button type="view" name="璐︽埛涓�瑙�"><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat%2FviewAccountMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>	
+		<button type="view" name=""><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat%2FviewDepositMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>	
+		<button type="view" name=""><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat%2FviewCreditCardMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>	
+		<button type="view" name=""><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat%2FviewManageMoneyMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>	
+		<button type="view" name=""><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat%2FviewLoanMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>	
 	</one>		
-	<two name="发现">
-		<button type="click" name="生活缴费" key="2001"/>
-		<button type="click" name="优惠活动" key="2002"/>
-		<button type="click" name="特惠商户" key="2003"/>
+	<two name="鍙戠幇">
+		<button type="click" name="" key="2001"/>
+		<button type="click" name="" key="2002"/>
+		<button type="click" name="" key="2003"/>
 	</two>	
-	<three name="助手">
-		<button type="click" name="账户管理" key="3001"/>
-		<button type="click" name="网点查询" key="3002"/>
-		<button type="click" name="联系客服" key="3003"/>
-		<button type="click" name="业务指南" key="3004"/>
-		<button type="view" name="测试网页"><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat% 2FviewMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>
+	<three name="鍔╂墜">
+		<button type="click" name="璐︽埛绠＄悊" key="3001"/>
+		<button type="click" name="" key="3002"/>
+		<button type="click" name="鑱旂郴瀹㈡湇" key="3003"/>
+		<button type="click" name="涓氬姟鎸囧崡" key="3004"/>
+		<button type="view" name="娴嬭瘯缃戦〉"><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa5d079aa79ec1e7b&redirect_uri=http%3A%2F%2F58.18.253.138%2Fwechat% 2FviewMenu.action&response_type=code&scope=snsapi_base&state=menu#wechat_redirect]]></button>
 	</three>
 
 </menus>
