@@ -11,20 +11,20 @@ import code.person.pojo.message.ArticleInfo;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2015-03-21
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 public interface ArticleInfoDao{
 
 	
 	
 	/*
-	 * ===========图文详情
+	 * ===========鍥炬枃璇︽儏
 	 */
 	 
 	/**
-	 * 根据非空条件得到图文详情分页列表
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌鍥炬枃璇︽儏鍒嗛〉鍒楄〃
 	 * @param articleInfo
 	 * @return
 	 * @throws Exception
@@ -34,7 +34,7 @@ public interface ArticleInfoDao{
 	public List selArticleInfoListByNewsId(String newsId);
 		
 	/**
-	 * 根据非空条件得到图文详情
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌鍥炬枃璇︽儏
 	 * @param articleInfo
 	 * @return
 	 * @throws Exception
@@ -42,7 +42,7 @@ public interface ArticleInfoDao{
 	public List selArticleInfoList(ArticleInfo articleInfo);
 	
 	/**
-	 * 根据主键得到图文详情对象
+	 * 鏍规嵁涓婚敭寰楀埌鍥炬枃璇︽儏瀵硅薄
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -50,7 +50,7 @@ public interface ArticleInfoDao{
 	public ArticleInfo selArticleInfo(ArticleInfo articleInfo);
 	
 	/**
-	 * 添加图文详情
+	 * 娣诲姞鍥炬枃璇︽儏
 	 * @param articleInfo
 	 * @return
 	 * @throws Exception
@@ -58,7 +58,7 @@ public interface ArticleInfoDao{
 	public void addArticleInfo(ArticleInfo articleInfo);
 	
 	/**
-	 * 更新图文详情
+	 * 鏇存柊鍥炬枃璇︽儏
 	 * @param articleInfo
 	 * @return
 	 * @throws Exception
@@ -66,7 +66,7 @@ public interface ArticleInfoDao{
 	public void updArticleInfo(ArticleInfo articleInfo);
 	
 	/**
-	 * 删除图文详情
+	 * 鍒犻櫎鍥炬枃璇︽儏
 	 * @param articleInfo
 	 * @return
 	 */
