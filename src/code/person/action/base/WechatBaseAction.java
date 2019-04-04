@@ -40,7 +40,7 @@ public class WechatBaseAction extends ActionSupport
 	private String code;
 	private String state;
 	protected String openid="";
-	private String tradeName="Î¢ĞÅÒøĞĞ½»Ò×";
+	private String tradeName="ä¸ªäººäº‹åŠ¡ç®¡ç†";
 	private String lastUrl="#";
 	private String confirmMessage = null;
 	//private String webUrl = "https://ebank.ordosbank.com/wechat/";
@@ -113,18 +113,18 @@ public class WechatBaseAction extends ActionSupport
 	}
 
 	public HashMap getReqHmFromXml() throws Exception {
-		// ½«½âÎö½á¹û´æ´¢ÔÚHashMapÖĞ
+		// å°†è§£æç»“æœå­˜å‚¨åœ¨HashMapä¸­
 		HashMap map = new HashMap();
 		xmlReq = "<xmlreq>"+xmlReq+"</xmlreq>";
 		//System.out.println(xmlReq);
-		// ¶ÁÈ¡ÊäÈëÁ÷
+		// è¯»å–è¾“å…¥æµ
 		Document document = DocumentHelper.parseText(xmlReq);
-		// µÃµ½xml¸ùÔªËØ
+		// å¾—åˆ°xmlæ ¹å…ƒç´ 
 		Element root = document.getRootElement();
-		// µÃµ½¸ùÔªËØµÄËùÓĞ×Ó½Úµã
+		// å¾—åˆ°æ ¹å…ƒç´ çš„æ‰€æœ‰å­èŠ‚ç‚¹
 		List<Element> elementList = root.elements();
 
-		// ±éÀúËùÓĞ×Ó½Úµã
+		// éå†æ‰€æœ‰å­èŠ‚ç‚¹
 		for (Element e : elementList){
 			map.put(e.getName(), e.getText());
 			//System.out.println(e.getName()+"  "+e.getText());
@@ -145,15 +145,15 @@ public class WechatBaseAction extends ActionSupport
 		if(openid == null){
 			openid = getOpenid();
 			if(openid==null)
-				throw new Exception("¶Ô²»Æğ!ÄúÃ»ÓĞ·ÃÎÊ¸Ã¹¦ÄÜµÄÈ¨ÏŞ!");
+				throw new Exception("å¯¹ä¸èµ·!æ‚¨æ²¡æœ‰è®¿é—®è¯¥åŠŸèƒ½çš„æƒé™!");
 		}
 		//if(!cusInfoService.isExitTest(openid)){
 			//System.out.println(openid);
 			//System.out.println("ddd");
-		//	throw new Exception("ÄúºÃ£¬´ËÎ¢ĞÅ¹«ÖÚºÅ»¹ÔÚ²âÊÔ½×¶Î£¬ÔİÊ±²»ÄÜÎªÄúÌá¹©·şÎñ£¬¾´ÇëÁÂ½â£¡");
+		//	throw new Exception("æ‚¨å¥½ï¼Œæ­¤å¾®ä¿¡å…¬ä¼—å·è¿˜åœ¨æµ‹è¯•é˜¶æ®µï¼Œæš‚æ—¶ä¸èƒ½ä¸ºæ‚¨æä¾›æœåŠ¡ï¼Œæ•¬è¯·è°…è§£ï¼");
 		//}
 		//if(lockInfoService.isNotLock(openid)){
-		//	throw new Exception("ÄúºÃ£¬´ËÎ¢ĞÅºÅÒÑ¾­±»Ëø£¬ÇëÏÈ½âËø£¡");
+		//	throw new Exception("æ‚¨å¥½ï¼Œæ­¤å¾®ä¿¡å·å·²ç»è¢«é”ï¼Œè¯·å…ˆè§£é”ï¼");
 		//}
 		
 		System.out.println("here input openid into ActionContext:"+openid);
@@ -222,7 +222,7 @@ public class WechatBaseAction extends ActionSupport
 		String signature = "";
 		try {
 			MessageDigest md = MessageDigest.getInstance("SHA-1");
-			// ¶Ô½ÓºóµÄ×Ö·û´®½øĞĞsha1¼ÓÃÜ
+			// å¯¹æ¥åçš„å­—ç¬¦ä¸²è¿›è¡Œsha1åŠ å¯†
 			byte[] digest = md.digest(string1.toString().getBytes());
 			signature = Utility.byteToStr(digest);
 		} catch (NoSuchAlgorithmException e) {
