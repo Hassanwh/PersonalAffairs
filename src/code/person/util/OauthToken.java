@@ -1,5 +1,5 @@
 package code.person.util;
-//OAuth认证协议令牌
+
 public class OauthToken{
 	private String token;
 	private int expiresIn;
