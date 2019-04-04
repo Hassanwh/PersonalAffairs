@@ -60,9 +60,9 @@ import code.person.util.WechatUtil;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2012-11-05
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
  @Service("wechatCommService")
 public class WechatCommServiceImpl extends WechatTrade implements WechatCommService{
@@ -84,18 +84,18 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 	
 	public boolean checkSignature(String signature,String timestamp,String nonce){
 		
-		System.out.println("ÎªÊ²Ã´");
-		// ¶Ôtoken¡¢timestampºÍnonce°´×ÖµäÅÅĞò
+		System.out.println("ä¸ºä»€ä¹ˆ");
+		// å¯¹tokenã€timestampå’ŒnonceæŒ‰å­—å…¸æ’åº
 		String[] paramArr = new String[] { token, timestamp, nonce };
 		Arrays.sort(paramArr);
 
-		// ½«ÅÅĞòºóµÄ½á¹ûÆ´½Ó³ÉÒ»¸ö×Ö·û´®
+		// å°†æ’åºåçš„ç»“æœæ‹¼æ¥æˆä¸€ä¸ªå­—ç¬¦ä¸²
 		String content = paramArr[0].concat(paramArr[1]).concat(paramArr[2]);
 
 		String ciphertext = null;
 		try {
 			MessageDigest md = MessageDigest.getInstance("SHA-1");
-			// ¶Ô½ÓºóµÄ×Ö·û´®½øĞĞsha1¼ÓÃÜ
+			// å¯¹æ¥åçš„å­—ç¬¦ä¸²è¿›è¡Œsha1åŠ å¯†
 			byte[] digest = md.digest(content.toString().getBytes());
 			ciphertext = Utility.byteToStr(digest);
 		} catch (NoSuchAlgorithmException e) {
@@ -103,7 +103,7 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 		}
 		System.out.println(ciphertext);
 		System.out.println(signature.toUpperCase());
-		// ½«sha1¼ÓÃÜºóµÄ×Ö·û´®Óësignature½øĞĞ¶Ô±È
+		// å°†sha1åŠ å¯†åçš„å­—ç¬¦ä¸²ä¸signatureè¿›è¡Œå¯¹æ¯”
 		return ciphertext != null ? ciphertext.equals(signature.toUpperCase()) : false;
 	}
 	
@@ -123,7 +123,7 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 			outTextMessage.setFromUserName(meid);
 			outTextMessage.setCreateTime((new Date()).getTime());
 			outTextMessage.setMsgType(super.OUT_MESSAGE_TYPE_TEXT);
-			outTextMessage.setContent("ÄúºÃ£¬´ËÎ¢ĞÅºÅÒÑ¾­±»Ëø£¬ÇëÏÈ½âËø£¡");
+			outTextMessage.setContent("æ‚¨å¥½ï¼Œæ­¤å¾®ä¿¡å·å·²ç»è¢«é”ï¼Œè¯·å…ˆè§£é”ï¼");
 			
 			HashMap hm = new HashMap();
 			hm.put("content", outTextMessage.getContent());			
@@ -154,28 +154,28 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 		if(msgType.equals(super.IN_MESSAGE_TYPE_TEXT)){
 			InTextMessage inTextMessage = new InTextMessage();
 			evalMapToBean(inMessage,inTextMessage);
-			if("Íõº×".equals(inMessage.get("Content"))){
+			if("ç‹é¹¤".equals(inMessage.get("Content"))){
 				outText.setToUserName(inTextMessage.getFromUserName());
 				outText.setFromUserName(inTextMessage.getToUserName());
 				outText.setCreateTime(new Date().getTime());
 				outText.setMsgType(super.OUT_MESSAGE_TYPE_TEXT);
-				outText.setContent("´óË§¸ç");
+				outText.setContent("å¤§å¸…å“¥");
 				outMessage = messageToXml(outText);
 			}
-			if("Ê¯ÓÀÇì".equals(inMessage.get("Content"))){
+			if("çŸ³æ°¸åº†".equals(inMessage.get("Content"))){
 				outText.setToUserName(inTextMessage.getFromUserName());
 				outText.setFromUserName(inTextMessage.getToUserName());
 				outText.setCreateTime(new Date().getTime());
 				outText.setMsgType(super.OUT_MESSAGE_TYPE_TEXT);
-				outText.setContent("Äã×îË§");
+				outText.setContent("ä½ æœ€å¸…");
 				outMessage = messageToXml(outText);
 			}
-			if("ÁõÃô".equals(inMessage.get("Content"))){
+			if("åˆ˜æ•".equals(inMessage.get("Content"))){
 				outText.setToUserName(inTextMessage.getFromUserName());
 				outText.setFromUserName(inTextMessage.getToUserName());
 				outText.setCreateTime(new Date().getTime());
 				outText.setMsgType(super.OUT_MESSAGE_TYPE_TEXT);
-				outText.setContent("´óË§¸ç");
+				outText.setContent("å¤§å¸…å“¥");
 				outMessage = messageToXml(outText);
 			}
 		}else if(msgType.equals(super.IN_MESSAGE_TYPE_IMAGE)){
@@ -212,7 +212,7 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 					List<Article> list=new ArrayList<Article>();
 					Article article=new Article();
 					article.setDescription("");
-					article.setTitle("\"ÇëÉ¨Ãè¶şÎ¬Âë¹Ø×¢¸öÈËÊÂÎñ¹ÜÀíÈº\"");
+					article.setTitle("\"è¯·æ‰«æäºŒç»´ç å…³æ³¨ä¸ªäººäº‹åŠ¡ç®¡ç†ç¾¤\"");
 					article.setPicUrl("http://mmbiz.qpic.cn/mmbiz_jpg/ERYiawYDIsodXn7ibk7UxUncG9OIlny5ISiaVuohdl1P5cGglicOvaqjEMvicq2x46iaanKwn8H3gBuiakWqfTyn5lepg/0");
 					article.setUrl("http://personalaffairs.51vip.biz/PersonalAffairs/aa.do");				
 					list.add(article);
@@ -225,7 +225,7 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 					outText.setFromUserName(menuEvent.getToUserName());
 					outText.setCreateTime(new Date().getTime());
 					outText.setMsgType(super.OUT_MESSAGE_TYPE_TEXT);
-					outText.setContent("¹Ø×¢±¾¹«ÖÚºÅºóÓïÑÔÖªÊ¶À¸Ä¿Äú¿ÉÒÔËæÒâ·ÃÎÊ£¡[Yeah!]\nÈçĞèÊ¹ÓÃÆäËû¹¦ÄÜÇëÄúµã»÷ÕË»§¹ÜÀíÖĞµÄ»áÔ±×¢²á£¬×¢²á³É¹¦ºó¼´¿ÉÊ¹ÓÃ£¡/:rose\nÈçĞè°ïÖúÇëµã»÷ÁªÏµÎÒÃÇ£¡[Smirk]\nÎª´Ë¸øÄú´øÀ´µÄ²»±ã¾¡ÇëÁÂ½â£¡/:8*");
+					outText.setContent("å…³æ³¨æœ¬å…¬ä¼—å·åè¯­è¨€çŸ¥è¯†æ ç›®æ‚¨å¯ä»¥éšæ„è®¿é—®ï¼[Yeah!]\nå¦‚éœ€ä½¿ç”¨å…¶ä»–åŠŸèƒ½è¯·æ‚¨ç‚¹å‡»è´¦æˆ·ç®¡ç†ä¸­çš„ä¼šå‘˜æ³¨å†Œï¼Œæ³¨å†ŒæˆåŠŸåå³å¯ä½¿ç”¨ï¼/:rose\nå¦‚éœ€å¸®åŠ©è¯·ç‚¹å‡»è”ç³»æˆ‘ä»¬ï¼[Smirk]\nä¸ºæ­¤ç»™æ‚¨å¸¦æ¥çš„ä¸ä¾¿å°½è¯·è°…è§£ï¼/:8*");
 					outMessage = messageToXml(outText);
 				}
 				//outMessage = menuEventService.addMenuEvent(menuEvent);
@@ -236,7 +236,7 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 					outText.setFromUserName(inObject.getToUserName());
 					outText.setCreateTime(new Date().getTime());
 					outText.setMsgType(super.OUT_MESSAGE_TYPE_TEXT);
-					outText.setContent("»¶Ó­Äú¼ÓÈë¸öÈËÊÂÎñ¹ÜÀíÏµÍ³£¡/:hug/:hug/:hug");
+					outText.setContent("æ¬¢è¿æ‚¨åŠ å…¥ä¸ªäººäº‹åŠ¡ç®¡ç†ç³»ç»Ÿï¼/:hug/:hug/:hug");
 					outMessage = messageToXml(outText);
 					
 				//outMessage = cusInfoService.subscribeEvent(inObject);
@@ -285,7 +285,7 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 			long createTime = new Date().getTime();
 			ppSendMessage.setCreateTime(Long.toString(createTime));
 			/**
-			 * ÏÂÔØÍ¼Æ¬²¢Í¨¹ıFTPÉÏ´«ÖÁÎÄ¼ş·şÎñÆ÷
+			 * ä¸‹è½½å›¾ç‰‡å¹¶é€šè¿‡FTPä¸Šä¼ è‡³æ–‡ä»¶æœåŠ¡å™¨
 			 */
 			wechatUtil.getMultimedia(inImageMessage.getPicUrl(),inImageMessage.getFromUserName()+"&"+inImageMessage.getCreateTime());
 		}else if(msgType.equals(super.IN_MESSAGE_TYPE_VOICE)){
@@ -306,13 +306,13 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 		String outMessage = "";
 		String content = inMessage.getContent();
 		String resultContent = "";
-		if(content.equals("?")||content.equals("£¿")){
-			resultContent="ÄãÒªÎÊÊ²Ã´£¿";
-		}else if(content.equals("ÄãºÃ")){
-			resultContent="ÄãºÃ£¬ÎÒºÃ£¬´ó¼ÒºÃ£¬´ó¼ÒºÃ²ÅÊÇÕæµÄºÃ";
+		if(content.equals("?")||content.equals("ï¼Ÿ")){
+			resultContent="ä½ è¦é—®ä»€ä¹ˆï¼Ÿ";
+		}else if(content.equals("ä½ å¥½")){
+			resultContent="ä½ å¥½ï¼Œæˆ‘å¥½ï¼Œå¤§å®¶å¥½ï¼Œå¤§å®¶å¥½æ‰æ˜¯çœŸçš„å¥½";
 		}else if(content.equals("test")){
-			resultContent="µã»÷ºóÃæ<a href=\"http://58.18.253.138/wechat/test.jsp\">²âÊÔÍøÒ³</a>!";
-		}else if(content.equals("²âÊÔ¿Í·ş")){
+			resultContent="ç‚¹å‡»åé¢<a href=\"http://58.18.253.138/wechat/test.jsp\">æµ‹è¯•ç½‘é¡µ</a>!";
+		}else if(content.equals("æµ‹è¯•å®¢æœ")){
 			HashMap hm = new HashMap();
 			String msgContent = inMessage.getFromUserName();
 			hm.put("content", msgContent);			
@@ -328,7 +328,7 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 			String msgContent = content.substring(31);
 			String openId = content.substring(3, 31);
 			System.out.println(openId);
-			hm.put("content", "¿Í·şldhËµ£º"+msgContent);			
+			hm.put("content", "å®¢æœldhè¯´ï¼š"+msgContent);			
 			JSONObject msg = new JSONObject();
 			msg.put("touser", openId);
 			msg.put("msgtype", "text");
@@ -336,24 +336,24 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 			String msgJson = wechatUtil.sendMsg(msg.toString());
 			System.out.println(msgJson);
 			return "";
-		}else if(content.equals("²âÊÔÄ£°æÏûÏ¢")){
+		}else if(content.equals("æµ‹è¯•æ¨¡ç‰ˆæ¶ˆæ¯")){
 			HashMap first = new HashMap();
-			first.put("value", "¸øÄã·¢¸öÄ£°æÏûÏ¢");
+			first.put("value", "ç»™ä½ å‘ä¸ªæ¨¡ç‰ˆæ¶ˆæ¯");
 			first.put("color", "#CCCCCC");
 			HashMap productType = new HashMap();
-			productType.put("value", "ÀàĞÍ£º¿¨");
+			productType.put("value", "ç±»å‹ï¼šå¡");
 			productType.put("color", "#CCCCCC");
 			HashMap time = new HashMap();
-			time.put("value", "½ñÌì");
+			time.put("value", "ä»Šå¤©");
 			time.put("color", "#CCCCCC");
 			HashMap type = new HashMap();
-			type.put("value", "ÊÕ¿î");
+			type.put("value", "æ”¶æ¬¾");
 			type.put("color", "#CCCCCC");
 			HashMap number = new HashMap();
 			number.put("value", "100000000000");
 			number.put("color", "#CE0000");
 			HashMap remark = new HashMap();
-			remark.put("value", "²âÊÔ³É¹¦");
+			remark.put("value", "æµ‹è¯•æˆåŠŸ");
 			remark.put("color", "#000000");
 			
 			HashMap data = new HashMap();
@@ -376,7 +376,7 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 			System.out.println(msgJson);
 			return "";
 		}else{
-			resultContent="ÎÒ²»Ã÷°×ÄãµÄÒâË¼";
+			resultContent="æˆ‘ä¸æ˜ç™½ä½ çš„æ„æ€";
 		}		
 		OutTextMessage outTextMessage = new OutTextMessage();
 		outTextMessage.setToUserName(inMessage.getFromUserName());
@@ -429,17 +429,17 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 		String eventKey = inMessage.getEventKey();
 		String resultContent = "";
 		if(eventKey.equals("select")){
-			resultContent="¿¨ÄÚÓà¶î£º88888888888Ôª";
+			resultContent="å¡å†…ä½™é¢ï¼š88888888888å…ƒ";
 		}else if(eventKey.equals("insert")){
-			resultContent="ÄãÏë´æ¿îÄÄ£¬´æ²»ÁË";
+			resultContent="ä½ æƒ³å­˜æ¬¾å“ªï¼Œå­˜ä¸äº†";
 		}else if(eventKey.equals("update")){
-			resultContent="ÄãÏë¸ÄÓà¶î£¬ÄãÔõÃ´ÏëµÃÄÇÃ´ÃÀÄØ";
+			resultContent="ä½ æƒ³æ”¹ä½™é¢ï¼Œä½ æ€ä¹ˆæƒ³å¾—é‚£ä¹ˆç¾å‘¢";
 		}else if(eventKey.equals("delete")){
-			resultContent="×ªÕË³É¹¦";
+			resultContent="è½¬è´¦æˆåŠŸ";
 		}else if(eventKey.equals("GOOD")){
-			resultContent="Ğ»Ğ»ÄãµÄÔŞ";
+			resultContent="è°¢è°¢ä½ çš„èµ";
 		}else{
-			resultContent="Õû²»Ã÷°×£¬ÕâÊÇÉ¶¶¯×÷¡£";
+			resultContent="æ•´ä¸æ˜ç™½ï¼Œè¿™æ˜¯å•¥åŠ¨ä½œã€‚";
 		}
 		
 		OutTextMessage outTextMessage = new OutTextMessage();
