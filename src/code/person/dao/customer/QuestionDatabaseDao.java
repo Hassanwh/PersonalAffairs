@@ -12,9 +12,9 @@ import code.person.pojo.customer.QuestionDatabase;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2015-01-04
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface QuestionDatabaseDao{
@@ -22,11 +22,11 @@ public interface QuestionDatabaseDao{
 	
 	
 	/*
-	 * ===========ÖªÊ¶¿â
+	 * ===========çŸ¥è¯†åº“
 	 */
 	 
 	/**
-	 * ¸ù¾İ·Ç¿ÕÌõ¼şµÃµ½ÖªÊ¶¿â·ÖÒ³ÁĞ±í
+	 * æ ¹æ®éç©ºæ¡ä»¶å¾—åˆ°çŸ¥è¯†åº“åˆ†é¡µåˆ—è¡¨
 	 * @param questionDatabase
 	 * @return
 	 * @throws Exception
@@ -34,7 +34,7 @@ public interface QuestionDatabaseDao{
 	public List selQuestionDatabaseList(QuestionDatabase questionDatabase,PageBounds pageBounds);
 		
 	/**
-	 * ¸ù¾İ·Ç¿ÕÌõ¼şµÃµ½ÖªÊ¶¿â
+	 * æ ¹æ®éç©ºæ¡ä»¶å¾—åˆ°çŸ¥è¯†åº“
 	 * @param questionDatabase
 	 * @return
 	 * @throws Exception
@@ -42,7 +42,7 @@ public interface QuestionDatabaseDao{
 	public List selQuestionDatabaseList(QuestionDatabase questionDatabase);
 	
 	/**
-	 * ¸ù¾İÖ÷¼üµÃµ½ÖªÊ¶¿â¶ÔÏó
+	 * æ ¹æ®ä¸»é”®å¾—åˆ°çŸ¥è¯†åº“å¯¹è±¡
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -50,7 +50,7 @@ public interface QuestionDatabaseDao{
 	public QuestionDatabase selQuestionDatabase(QuestionDatabase questionDatabase);
 	
 	/**
-	 * Ìí¼ÓÖªÊ¶¿â
+	 * æ·»åŠ çŸ¥è¯†åº“
 	 * @param questionDatabase
 	 * @return
 	 * @throws Exception
@@ -58,7 +58,7 @@ public interface QuestionDatabaseDao{
 	public void addQuestionDatabase(QuestionDatabase questionDatabase);
 	
 	/**
-	 * ¸üĞÂÖªÊ¶¿â
+	 * æ›´æ–°çŸ¥è¯†åº“
 	 * @param questionDatabase
 	 * @return
 	 * @throws Exception
@@ -66,7 +66,7 @@ public interface QuestionDatabaseDao{
 	public void updQuestionDatabase(QuestionDatabase questionDatabase);
 	
 	/**
-	 * É¾³ıÖªÊ¶¿â
+	 * åˆ é™¤çŸ¥è¯†åº“
 	 * @param questionDatabase
 	 * @return
 	 */
