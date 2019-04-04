@@ -154,28 +154,28 @@ public class WechatCommServiceImpl extends WechatTrade implements WechatCommServ
 		if(msgType.equals(super.IN_MESSAGE_TYPE_TEXT)){
 			InTextMessage inTextMessage = new InTextMessage();
 			evalMapToBean(inMessage,inTextMessage);
-			if("王鹤".equals(inMessage.get("Content"))){
+			if("1".equals(inMessage.get("Content"))){
 				outText.setToUserName(inTextMessage.getFromUserName());
 				outText.setFromUserName(inTextMessage.getToUserName());
 				outText.setCreateTime(new Date().getTime());
 				outText.setMsgType(super.OUT_MESSAGE_TYPE_TEXT);
-				outText.setContent("大帅哥");
+				outText.setContent("1");
 				outMessage = messageToXml(outText);
 			}
-			if("石永庆".equals(inMessage.get("Content"))){
+			if("2".equals(inMessage.get("Content"))){
 				outText.setToUserName(inTextMessage.getFromUserName());
 				outText.setFromUserName(inTextMessage.getToUserName());
 				outText.setCreateTime(new Date().getTime());
 				outText.setMsgType(super.OUT_MESSAGE_TYPE_TEXT);
-				outText.setContent("你最帅");
+				outText.setContent("2");
 				outMessage = messageToXml(outText);
 			}
-			if("刘敏".equals(inMessage.get("Content"))){
+			if("3".equals(inMessage.get("Content"))){
 				outText.setToUserName(inTextMessage.getFromUserName());
 				outText.setFromUserName(inTextMessage.getToUserName());
 				outText.setCreateTime(new Date().getTime());
 				outText.setMsgType(super.OUT_MESSAGE_TYPE_TEXT);
-				outText.setContent("大帅哥");
+				outText.setContent("3");
 				outMessage = messageToXml(outText);
 			}
 		}else if(msgType.equals(super.IN_MESSAGE_TYPE_IMAGE)){
