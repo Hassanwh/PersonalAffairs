@@ -12,9 +12,9 @@ import code.person.pojo.admin.MatterInfo;
  * <br/>Copyright (C), 2001-2011, 
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
- * <br/>Date:	2015-06-10
- * @author  ldh
- * @version  2.0
+ * <br/>Date:	
+ * @author  WH
+ * @version  1.0
  */
 @Repository
 public interface MatterInfoDao{
@@ -22,11 +22,11 @@ public interface MatterInfoDao{
 	
 	
 	/*
-	 * ===========素材信息
+	 * ===========绱犳潗淇℃伅
 	 */
 	 
 	/**
-	 * 根据非空条件得到素材信息分页列表
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌绱犳潗淇℃伅鍒嗛〉鍒楄〃
 	 * @param lockInfo
 	 * @return
 	 * @throws Exception
@@ -34,7 +34,7 @@ public interface MatterInfoDao{
 	public List selMatterInfoList(MatterInfo matterInfo,PageBounds pageBounds);
 		
 	/**
-	 * 根据非空条件得到素材信息
+	 * 鏍规嵁闈炵┖鏉′欢寰楀埌绱犳潗淇℃伅
 	 * @param MatterInfo
 	 * @return
 	 * @throws Exception
@@ -42,7 +42,7 @@ public interface MatterInfoDao{
 	public List selMatterInfoList(MatterInfo matterInfo);
 	
 	/**
-	 * 根据主键得到素材信息对象
+	 * 鏍规嵁涓婚敭寰楀埌绱犳潗淇℃伅瀵硅薄
 	 * @param id
 	 * @return
 	 * @throws Exception
@@ -50,7 +50,7 @@ public interface MatterInfoDao{
 	public MatterInfo selMatterInfo(MatterInfo matterInfo);
 	
 	/**
-	 * 添加素材信息
+	 * 娣诲姞绱犳潗淇℃伅
 	 * @param MatterInfo
 	 * @return
 	 * @throws Exception
@@ -58,7 +58,7 @@ public interface MatterInfoDao{
 	public void addMatterInfo(MatterInfo matterInfo);
 	
 	/**
-	 * 更新素材信息
+	 * 鏇存柊绱犳潗淇℃伅
 	 * @param MatterInfo
 	 * @return
 	 * @throws Exception
@@ -66,7 +66,7 @@ public interface MatterInfoDao{
 	public void updMatterInfo(MatterInfo matterInfo);
 	
 	/**
-	 * 删除素材信息
+	 * 鍒犻櫎绱犳潗淇℃伅
 	 * @param MatterInfo
 	 * @return
 	 */
